@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roll</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+
+<body>
+    <script src="./logics.js"></script>
+    <div class="main-container">
+        <div class="dice-container">
+            <h2>Try your Today's Luck with
+                <span onclick="setInterval(topicChanger(), 20000)" id="magicWord">Luck</span>
+                Dice</h2>
+            <div class="right-container">
+                <h4>Luck Meter</h4>
+                <img src="meter.png" alt="luckMeter">
+                <ul>
+                    <li>1 --> GrateFull Day</li>
+                    <li>2 --> Happy Face</li>
+                    <li>3 --> Kinda Sus</li>
+                    <li>4 --> Once in a BlueMoon</li>
+                    <li>5 --> Carefull</li>
+                    <li>6 --> God saves you</li>
+                </ul>
+            </div>
+            <div class="left-container">
+                <img id="img" src="1.png" alt="dice">
+                <h3 id="senten">Click the Button and Try your Luck</h3>
+                <button onClick="diceRoller()" class="clickButton">Click Me</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
